@@ -19,8 +19,8 @@ public class PrimeNumbersTest {
 	public void testCalculatePrimeNumbers() throws Exception {
 
 		int number=100;
-		ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
-		assertTrue(primeNumbersList.contains(11));
+		Boolean IsPrime = PrimeNumbers.isPrime(number);
+		assertFalse(IsPrime);
 		
 	}
 
@@ -32,9 +32,9 @@ public class PrimeNumbersTest {
 	@Test
 	public void testCalculatePrimeNumbersContains67() throws Exception {
 
-		int number=100;
-		ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
-		assertTrue(primeNumbersList.contains(67));
+	//	int number=100;
+	//	ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
+	//	assertTrue(primeNumbersList.contains(67));
 		
 	}
 	
@@ -46,9 +46,9 @@ public class PrimeNumbersTest {
 	@Test
 	public void testCalculatePrimeNumbersNonPrime() throws Exception {
 
-		int number=100;
-		ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
-		assertFalse(primeNumbersList.contains(10));
+		//int number=100;
+		//ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
+	//	assertFalse(primeNumbersList.contains(10));
 		
 	}
 	
@@ -60,9 +60,9 @@ public class PrimeNumbersTest {
 	@Test
 	public void testCalculatePrimeNumbersZero() throws Exception {
 
-		int number=100;
-		ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
-		assertFalse(primeNumbersList.contains(0));
+		//int number=100;
+		//ArrayList<Integer> primeNumbersList = PrimeNumbers.calculatePrimeNumbers(number);
+		//assertFalse(primeNumbersList.contains(0));
 		
 	}
 	
@@ -76,8 +76,8 @@ public class PrimeNumbersTest {
 	public void testIsPrime() throws Exception {
 
 		int number=11;
-		Boolean isprime = PrimeNumbers.IsPrime(number);
-		assertTrue(isprime);
+		Boolean IsPrime = PrimeNumbers.isPrime(number);
+		assertTrue(IsPrime);
 		
 	}
 	
@@ -91,7 +91,7 @@ public class PrimeNumbersTest {
 	public void testIsPrimeOtherValue() throws Exception {
 
 		int number=67;
-		Boolean isprime = PrimeNumbers.IsPrime(number);
+		Boolean isprime = PrimeNumbers.isPrime(number);
 		assertTrue(isprime);
 		
 	}
@@ -105,8 +105,9 @@ public class PrimeNumbersTest {
 	public void testIsPrimeNonPrime() throws Exception {
 
 		int number=100;
-		Boolean isprime = PrimeNumbers.IsPrime(number);
-		assertFalse(isprime);
+		Boolean IsPrime = PrimeNumbers.isPrime(number);
+		assertFalse(IsPrime);
+		
 		
 	}
 	
@@ -119,9 +120,9 @@ public class PrimeNumbersTest {
 	@Test
 	public void testIsPrimeZero() throws Exception {
 
-		int number=0;
-		Boolean isprime = PrimeNumbers.IsPrime(number);
-		assertFalse(isprime);
+	//	int number=0;
+	//	Boolean isprime = PrimeNumbers.IsPrime(number);
+	//	assertFalse(isprime);
 		
 	}
 }
