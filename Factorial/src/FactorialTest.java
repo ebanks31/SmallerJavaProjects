@@ -77,4 +77,12 @@ public class FactorialTest {
 
 	}
 
+	@Test
+	public void testFactorialIterative() throws Exception {
+		long number = 4;
+		long result = Factorial.FactorialIterative(number);
+		System.out.println("Factorial Iterative of " + number  +"! is " + Factorial.FactorialRecursion(number));
+		assertEquals(result, 24);
+	}
+
 }

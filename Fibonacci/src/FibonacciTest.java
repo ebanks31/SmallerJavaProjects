@@ -131,6 +131,16 @@ public class FibonacciTest {
 	}
 	
 	@Test
+	public void testGetFibonacciWithoutRecursionValidFour() throws Exception {
+
+		long number = 5;
+		long result = Fibonacci.getFibonacciSeriesWithoutRecursion(number);
+		
+		assertEquals(result, 5);
+		
+	}
+	
+	@Test
 	public void testGetFibonacciWithoutRecursionValidLargeNumber() throws Exception {
 
 		long number = 30;

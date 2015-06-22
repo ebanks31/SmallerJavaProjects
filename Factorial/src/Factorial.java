@@ -41,6 +41,33 @@ public class Factorial {
 		
 		}
 		
-		
+		/**
+		 * Factorial iterative.
+		 *
+		 * @param number the number
+		 * @return the int
+		 * @throws LessThanZeroException 
+		 */
+		public static long FactorialIterative(long number) throws LessThanZeroException
+		{
+			if (number < 0)
+			{
+				throw new LessThanZeroException();
+			}
+			if (number == 0)
+			{
+				return 1;
+			}
+			
+			long result = 1;
+			
+			for (int i = 1; i<=number; i++)
+			{
+			
+				result *= i;
+			}
+			
+			return result;
+		}
 	}
 
