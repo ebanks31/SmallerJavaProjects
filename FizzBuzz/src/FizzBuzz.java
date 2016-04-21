@@ -27,7 +27,16 @@ public class FizzBuzz {
 		this.test = test;
 	}
 
-
+	
+	/**
+	 * For numbers starting from 1 to the number in the parameter, 
+	 * This method will print Fizz, Buzz, or FizzBuzz depending on the conditions below. 
+	 * This method will print FizzBuzz if the number is divisible by 3 and 5.
+	 * Print Fizz if divisible by 3.
+	 * Print Buzz if divisible by 5.
+	 *
+	 * @param number the number used to print Fizz, Buzz, or FizzBuzz.
+	 */
 	public static void printFizzBuzz(int number) {
 		for (int i = 1; i < number; i++) {
 			System.out.println("Number: " + i);
